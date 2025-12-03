@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -96,4 +100,243 @@ p{
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.header{
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.categorias{
+    margin: 70px 0;
+}
+
+.categorias .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 15px; /* Espaço nas laterais */
+}
+
+.col-3{
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 10px; /* Espaço entre as colunas */
+}
+
+/* Para manter a consistência, atualize também as categorias */
+.col-3 img {
+    width: 100%;
+    max-width: 100%;
+    height: 350px; /* Ajuste se necessário */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-3:hover img {
+    transform: translateY(-8px); /* Igual aos produtos */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Igual aos produtos */
+}
+
+/* Responsividade */
+@media screen and (max-width: 900px) {
+    .categorias .row {
+        padding: 0 10px;
+    }
+    
+    .col-3 {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 150px;
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categorias .row {
+        padding: 0 5px;
+    }
+    
+    .col-3 {
+        flex: 1 1 100%;
+        padding: 0 5px;
+    }
+    
+    .col-3 img {
+        height: 200px;
+    }
+}
+
+.small-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Para que todas tenham a mesma altura */
+    gap: 20px;
+}
+
+.col-4 {
+    flex: 1;
+    min-width: 200px;
+    max-width: 23%; /* Limite máximo de largura */
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo uniformemente */
+}
+
+/* Ajuste para garantir 4 por linha */
+@media screen and (min-width: 1200px) {
+    .col-4 {
+        flex: 0 0 calc(25% - 20px); /* 4 por linha com gap de 20px */
+    }
+}
+
+/* IMAGEM DO PRODUTO COM HOVER */
+.col-4 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicione box-shadow aqui */
+}
+
+/* EFEITO HOVER NA IMAGEM DO PRODUTO (igual às categorias) */
+.col-4:hover img {
+    transform: translateY(-5px); /* Mesmo efeito das categorias */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Mesma sombra das categorias */
+}
+
+/* CSS COMPLETO CORRIGIDO */
+.col-4{
+    flex-basis: 23%;
+    padding: 15px;
+    min-width: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEM COM EFEITO HOVER INDEPENDENTE */
+.col-4 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFEITO HOVER NA IMAGEM (igual ao das categorias) */
+.col-4:hover img {
+    transform: translateY(-8px); /* Um pouco mais pronunciado */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* NOME DO PRODUTO */
+.col-4 h4 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.1rem;
+    min-height: 50px; /* Altura mínima para alinhar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ESTRELAS */
+.rating {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* PREÇO */
+.col-4 p {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 900px) {
+    .small-container .row{
+        padding: 0 10px;
+    }
+
+    .col-4 {
+        flex: 0 0 calc(50% - 20px); /* 2 por linha */
+        max-width: calc(50% - 20px);
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .small-container .row {
+        padding: 0 5px;
+    }
+
+    .col-4 {
+        flex: 1 1 100%; 
+        padding: 0 5px;
+    }
+    
+    .col-4 img {
+        height: 200px;
+    }
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color:#555
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }

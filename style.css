@@ -270,21 +270,58 @@ p{
     justify-content: center;
 }
 
-/* ESTRELAS */
+/* ESTRELAS - ESTADO NORMAL (PRETO) */
 .rating {
     margin: 10px 0;
     font-size: 14px;
 }
 
-/* PREÇO */
+.rating i {
+    margin: 0 2px;
+    transition: color 0.3s ease;
+}
+
+/* Estrelas cheias - preto */
+.rating .fa-star {
+    color: #000000;
+}
+
+/* Meia estrela - preto */
+.rating .fa-star-half-alt {
+    color: #000000;
+}
+
+/* Estrela vazia - cinza escuro */
+.rating .fa-regular.fa-star {
+    color: #666666;
+}
+
+/* Efeito hover nas estrelas */
+.col-4:hover .rating i {
+    color: #ffc107; 
+}
+
+/* Preço - estado normal */
 .col-4 p {
-    color: #000;
+    color: #000000; 
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 10px;
+    transition: color 0.3s ease;
 }
 
-/* RESPONSIVIDADE */
+/* Preço - estado hover */
+.col-4:hover p {
+    color: #28a745; 
+}
+
+/* Sombra no texto */
+.col-4:hover p {
+    color: #28a745;
+    text-shadow: 0 2px 5px rgba(255, 119, 0, 0.3);
+}
+
+/* Responsividade */
 @media screen and (max-width: 900px) {
     .small-container .row{
         padding: 0 10px;

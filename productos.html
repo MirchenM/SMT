@@ -3,77 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Smile T-Shirts | SMT </title>
+        <title> Todos Productos - Smile T-Shirts </title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
-        <div class="header">
 
                 <div class="container">
                     <div class="navbar">
                         <div class="logo">
-                            <a href="index.html"><img src="imagens/logo/logo0.png" width="125px"></a>
+                            <img src="imagens/logo/logo0.png" width="125px">
                         </div>
                         <nav>
                             <ul id="MenuItems">
-                                <li><a href="index.html">Home</a></li> 
-                                <li><a href="productos.html">Products</a></li> 
+                                <li><a href="">Home</a></li> 
+                                <li><a href="">Products</a></li> 
                                 <li><a href="">About</a></li> 
                                 <li><a href="">Contact</a></li> 
-                                <li><a href="account.html">Account</a></li> 
+                                <li><a href="">Account</a></li> 
                             </ul>
                         </nav>
-                        <a href="carrinho.html"><img src="imagens/icons/cart.png" width="30px" height="30px"></a>
+                        <img src="imagens/icons/cart.png" width="30px" height="30px">
                         <img src="imagens/icons/menu.png" class="menu-icon" onclick="menutoggle()">
                     </div>
-                <div class="row">
-                    <div class="col-2">
-                    <h1>Dê um novo Estilo<br> ao seu Trabalho!</h1>
-                    <p>O sucesso nem sempre se resume à grandeza. Trata-se de
-                        consistência. Trabalho árduo e consistente leva ao sucesso.<br> 
-                        A grandeza virá.</p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <div class="image-group">
-                        <img src="imagens/apresentacao/imgg1.png">
-                        <img src="imagens/apresentacao/imgg2.png">
-                    </div>
-                </div>
             </div>
         </div>
-        </div>
 
-        <!------- CATEGORIAS EM DESTAQUE ------->
-            <div class="categorias">
-                <div class="small-container">
-                    <h2 class="title"> Categorias em Destaque</h2>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="imagens/categoriasemdestaque/cat1.jpg">
-                        </div>
-                        <div class="col-3">
-                            <img src="imagens/categoriasemdestaque/cat2.jpg">
-                        </div>
-                        <div class="col-3">
-                            <img src="imagens/categoriasemdestaque/cat3.jpg">
-                        </div>
-                        <div class="col-3">
-                            <img src="imagens/categoriasemdestaque/cat4.jpg">
-                        </div>
-                </div>
-                </div>
-            </div>
-
-            <!------- PRODUCTOS EM DESTAQUE ------->
             <div class="small-container">
-                <h2 class="title">Productos em Destaque</h2>
+
+                <div class="row row-2">
+                    <h2> Todos Productos</h2>
+                    <select>
+                        <option> Classificação Padrão</option>
+                        <option> Classificar por preço</option>
+                        <option> Classificar por popularidade</option>
+                        <option> Classificar por classificação</option>
+                        <option> Classificar por venda</option>
+                    </select>
+                </div>
+
                 <div class="row">
                     <div class="col-4">
-                        <a href="productos_detalhes.html"><img src="imagens/productosemdestaque/producto1.png"></a>
-                        <a href="productos_detalhes.html"><h4> Ride or Die - T-Shirt Edition </h4></a>
+                        <img src="imagens/productosemdestaque/producto1.png">
+                        <h4> Ride or Die - T-Shirt Edition </h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -119,11 +92,6 @@
                         </div>
                         <p> 600,00 MZN</p>
                     </div>
-                </div>
-
-                <!------- PRODUCTOS mais RECENTES ------->
-                <h2 class="title"> Productos mais Recentes </h2>
-                <div class="row">
                     <div class="col-4">
                         <img src="imagens/productosmaisrecentes/producto1.png">
                         <h4> Juice WRLD - Hoodie Special Edition </h4>
@@ -222,85 +190,18 @@
                         </div>
                         <p> 800,00 MZN</p>
                     </div>
-                </div> 
-            </div>
+                </div>
 
-            <!-------- offer ------->
-            <div class="offer">
-                <div class="small-container">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="imagens/exclusivo/exclusivo.png" class="offer-img">
-                        </div>
-                        <div class="col-2">
-                            <p> Exclusivamente Disponível na Smile T-Shirts</p>
-                            <h1> Polo SMT </h1>
-                            <small> A sua nova favorita acaba de chegar — Polo Personalizada! Única, confortável e feita especialmente para você!</small>
-                            <a href="" class="btn"> Buy Now &#8594;</a>
-                        </div>
-                    </div>
+                <div class="page-btn">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594;</span>
                 </div>
             </div>
 
-        <!---------- testimonial ---------->
-        <!---------- testimonial 1 ---------->
-            <div class="testimonial">
-                <div class="small-container">
-                    <div class="row">
-                        <div class="col-3">
-                            <i class="fa fa-quote-left"></i>
-                            <p> Adorei a minha experiência de compra na Smile T-Shirts!
-                             A qualidade das t-shirts é excelente e o design é super
-                             moderno. Recomendo a todos que procuram estilo e conforto
-                             num só producto.</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <img src="imagens/usuario/user1.png">
-                            <h3> Alexandrina Fonseca </h3>
-                        </div>
-                        <!---------- testimonial 2 ---------->
-                        <div class="col-3">
-                            <i class="fa fa-quote-left"></i>
-                            <p> Adorei a minha experiência de compra na Smile T-Shirts!
-                             A qualidade das t-shirts é excelente e o design é super
-                             moderno. Recomendo a todos que procuram estilo e conforto
-                             num só producto.</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <img src="imagens/usuario/user2.png">
-                            <h3> Mirchen Maibaze </h3>
-                        </div>
-                        <!---------- testimonial 3 ---------->
-                        <div class="col-3">
-                            <i class="fa fa-quote-left"></i>
-                            <p> Adorei a minha experiência de compra na Smile T-Shirts!
-                             A qualidade das t-shirts é excelente e o design é super
-                             moderno. Recomendo a todos que procuram estilo e conforto
-                             num só producto.</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <img src="imagens/usuario/user2.png">
-                            <h3> Yuran Matsinhe </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+     
             <!-------- footer ---------->
             <div class="footer">
                 <div class="container">
@@ -315,7 +216,7 @@
                         </div>
                         <div class="footer-col-2">
                             <img src="imagens/logo/logo11.png">
-                            <p> A vida não é perfeita, mas sua roupa pode ser!</p>
+                            <p> A vida não é perfeita, msa sua roupa pode ser!</p>
                         </div>
                         <div class="footer-col-3">
                             <h3> Useful Links </h3>
